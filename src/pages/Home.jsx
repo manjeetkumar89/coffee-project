@@ -533,7 +533,7 @@ export default function Home({ darkMode, setDarkMode, palette, footerRef }) {
         </section>
 
         {/* Best Sellers */}
-        <section ref={bestSellersRef} className="px-6 md:px-24 py-16">
+        <section ref={bestSellersRef} className=" md:px-24 py-16">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-5 font-heading" style={{ color: darkMode ? palette.mutedGold : palette.coffeeBrown }}>Best Sellers</h2>
           <p className="text-center max-w-2xl mx-auto mb-10 text-sm md:text-lg font-body font-light" style={{ color: darkMode ? palette.darkCream : palette.espresso }}>
             Discover the blends our community can’t stop sipping. Handpicked favorites, crafted for unforgettable moments—these best sellers are the heart and soul of every coffee ritual.
@@ -545,6 +545,7 @@ export default function Home({ darkMode, setDarkMode, palette, footerRef }) {
                   key={product.id}
                   to={`/products/${product.id}`}
                   style={{ textDecoration: 'none' }}
+                  className="gsap-card"
                 >
                   <BestSellerCard
                     id={product.id}

@@ -7,27 +7,10 @@ import Loading from '../components/Loading';
 
 const BestSellerCard = lazy(() => import('../components/BestSellerCard'));
 
-const categoryInfo = {
-  'coffee beans': {
-    heading: 'Coffee Beans',
-    description: 'Discover our premium selection of coffee beans, roasted to perfection for every coffee lover. From bold espresso to smooth vanilla, find your perfect blend.',
-  },
-  'cold brew': {
-    heading: 'Cold Brew',
-    description: 'Refresh yourself with our cold brew collection. Crafted for smoothness and bold flavor, perfect for hot days or a cool pick-me-up.',
-  },
-  'matcha': {
-    heading: 'Matcha',
-    description: 'Experience the vibrant taste of our matcha range. Sourced from the finest Japanese tea leaves, our matcha is perfect for lattes, iced drinks, and more.',
-  },
-};
 
 const Products = ({ darkMode, palette }) => {
   const { products } = useData();
   const sliderRefs = useRef({});
-
-  // Group products by category
-  const categories = ['coffee beans', 'cold brew', 'matcha'];
 
   // Handle mouse wheel for horizontal scroll
   const handleWheel = (e, cat) => {
@@ -46,8 +29,7 @@ const Products = ({ darkMode, palette }) => {
     : 'linear-gradient(to bottom, #FFF9F2 0%, #f5ede6 100%)';
   const headingColor = darkMode ? palette.mutedGold : palette.coffeeBrown;
   const subTextColor = darkMode ? palette.darkCream : palette.espresso;
-  const cardBg = darkMode ? palette.cardBg : palette.creamGlass;
-  const cardBorder = darkMode ? palette.creamBorder : palette.creamBorder;
+  
 
   // Section info
   const sections = [
