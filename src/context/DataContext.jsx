@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState } from 'react';
-import coldBrew1 from '../assets/productImages/coldBrew1.webp'
-import coldBrew2 from '../assets/productImages/coldBrew2.webp'
-import coldBrew3 from '../assets/productImages/coldBrew3.webp'
+import coldBrew1 from '../assets/productImages/coldbrew1.webp'
+import coldBrew2 from '../assets/productImages/coldbrew2.webp'
+import coldBrew3 from '../assets/productImages/coldbrew3.webp'
 import matcha1 from '../assets/productImages/matcha1.webp'
 import matcha2 from '../assets/productImages/matcha2.webp'
 import matcha3 from '../assets/productImages/matcha3.webp'
